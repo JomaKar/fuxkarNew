@@ -189,7 +189,7 @@ $(function(){
 
 					var myModelYear = `<div class="galleryNeck col-xs-12 noPadding noMargin typeFilter${yearName}">
 					                    <span class="gallNeckCarSp"></span>
-					                    <span class="gallNeckCarTxt">${yearName}</span>
+					                    <span class="gallNeckCarTxt">${yearName} ${typeName}</span>
 					                </div>
 					                <div class="col-xs-12 noPadding noMargin">
 					                    <div class="row-fluid noPadding noMargin childHeight modelBoxYear${type + yearActual}">
