@@ -1,0 +1,427 @@
+@import 'colors.styl'
+
+body
+	margin 0 auto !important
+	font-family Roboto sans-serif
+	padding 0px
+	
+	.container-fluid
+		&.login,  &.registro
+			margin-top 70px
+		
+		&.conNav
+			margin-top 40px
+		
+		&.conInnerHead
+			margin-top 191px
+
+.grayColor
+	color $grayNoColor !important
+	fill $grayNoColor !important
+	
+.hiddenItm
+	display none !important
+	
+.noMxWidth
+	max-width none !important
+	
+.noBrd
+	border hidden !important
+	
+.btmBrd
+	border-bottom 1px solid
+	
+.aquaColor
+	color $regActiveBtn !important
+	
+.defaultPointer
+	cursor default !important
+
+button.shareVrumm
+	padding 10px 15px
+	color whitesmoke
+	background-color transparent
+	border hidden
+	
+	&:focus
+		border hidden
+
+.myNavBar
+	position fixed !important
+	top 0
+	left 0
+	z-index 10
+	width 100vw
+	height 40px !important
+	min-height 40px !important
+	box-sizing content-box
+	background-color $navbarBack !important
+	
+	&.downBrd
+		border-bottom 1px solid
+	
+	&.noBacKBtn
+		div
+			.navbarBackBtn
+				display none
+				
+	&.withSuperTop
+		div
+			#navbar
+				top -11px
+				
+	&.noPhoto
+		div
+			#navbar
+				.navMenuList
+					li
+						&.profileNavLinkCont
+							display none
+	
+	div
+		.navbarBackBtn
+			position absolute
+			left 12px
+			top 8px
+			font-size 22px
+			cursor pointer
+			color $regActiveBtn
+
+		.navbar-header
+			height 40px
+			margin-left 45px
+			
+			button.navbar-toggle
+				margin-bottom 0
+				margin-top 2px
+
+		
+		#navbar
+			background-color $navbarBack
+			width 100%
+			margin-top 0
+			position relative
+			top -1px
+			
+			&.superTop
+				top -11px
+			
+			.navMenuList
+				
+				li 
+					height 40px !important
+					
+					a 
+						height 39px !important
+						line-height 10px !important
+						font-size 14px
+						cursor pointer
+						
+						&.profileNavLink
+							padding-top 4px
+							padding-bottom 0
+							display flex
+							
+							span
+								margin-top 8px
+								
+								&:last-of-type
+									margin-right 9px
+
+							.minProfileImg
+								height 30px
+								width 30px
+						
+					&:last-of-type
+						a
+							border-right hidden
+							
+					
+							
+@media(min-width 768px)
+	button.shareVrumm
+		padding 0
+		
+	.myNavBar
+		div
+			.navbarBackBtn
+				left -40px
+				
+			.navbar-header
+				margin-left 0px
+				
+			#navbar
+				position initial
+				
+				.navMenuList
+					position absolute
+					right 10px
+					
+					.menuItmSign
+						margin-top 15px
+						font-size 14px
+						color white
+						transform scale(1.2, 1.8)
+						display none
+						
+					li
+						&.dropdown
+							&.open
+								margin-left 33px
+								
+								&.inside
+									margin-left 42px
+								
+								.hidedMenu
+									margin 2px 0 0 -36px !important
+									cursor pointer
+									background-color black
+									border 1px solid
+									border-bottom hidden
+									position absolute
+									z-index 10
+									height 40px
+									
+									.onExp
+										display block
+										color white
+										font-size 18px
+										display inline-block
+										
+									.onColl
+										display none
+											
+								.navSMenuList
+									display block
+									position absolute
+									right 0
+									top 41px
+									background-color black
+									border 1px solid
+									z-index 8
+									padding-top 16px
+									width 162px
+									box-sizing border-box
+									list-style none
+									padding-left  17px
+										
+									li
+										&.disabled
+											cursor not-allowed
+											a
+												color $grayVersionsInfo
+												text-decoration none
+												
+												&:hover
+													cursor not-allowed
+										a
+											color whitesmoke
+											text-decoration none
+											
+											&:hover
+												color $regTextColor
+												cursor pointer
+							
+							&.inside
+								.hidedMenu
+									margin-left 5px
+
+							.hidedMenu
+								display block !important
+								border 1px solid
+								padding 8px
+								height 35px
+								z-index auto
+								margin-top 2px
+								background-color black
+									
+								.onExp
+									display none
+									
+								.onColl
+									display block
+									color white
+									font-size 18px
+										
+							.navSMenuList
+								display none
+
+						a
+							border-right 1px solid white
+			
+.iconLogo
+	background-image url('../img/h_logo-l.png')
+	width 100px
+	height 40px
+	background-size 100% !important
+	background-repeat no-repeat 
+	background-position center !important
+	margin-left 0px	
+
+.form-control
+	&.myFormContr
+		background-color transparent
+		border hidden
+
+.myFormContr
+	background-color transparent
+	border hidden		
+
+.noPadding
+	padding 0px !important
+	&.half
+		padding 0 7.5px 0 7.5px !important
+	&.butVertHalf
+		padding 7.5px 0 !important
+		
+	&.butVertHalf13
+		padding 6.5px 0 !important
+		
+.butVertHalf
+	padding 7.5px 0 !important		
+
+.butVertHalf13
+	padding 6.5px 0 !important
+
+.NoleftP
+	padding-left 0 !important
+	&.halfR
+		padding-right 7.5px !important
+			
+.NorightP
+	padding-right 0 !important
+	&.halfL
+		padding-left 7.5px !important
+
+
+.dblleftP
+	padding-left 30px !important
+
+.dblrightP
+	padding-right 30px !important
+
+.NotopP
+	padding-top 0 !important
+.NobottomP
+	padding-bottom 0 !important			
+
+.noMargin
+	margin-left 0px !important
+	margin-right 0px !important
+	margin-top 0px !important
+	margin-bottom 0px !important
+.NoleftM
+	margin-left 0px !important
+	&.halfMR
+		margin-right 7.5px
+.NorightM
+	margin-right 0px !important
+	&.halfML
+		margin-left 7.5px
+.NobottomM
+	margin-bottom 0px !important
+.NotopM
+	margin-top 0px !important		
+		
+.childHeight
+	overflow auto	
+	
+
+.backImg
+	background-size cover
+	background-position top left
+	background-clip content-box
+	&.circ
+		boder-radius 50%
+		
+	&.backSz
+		background-size 85%
+		background-repeat no-repeat
+	
+	&.centerBackImg
+		background-position center	
+
+.regInputs
+	color white
+	padding-left 12px
+	padding-right 12px
+	font-size 12px
+	text-align left
+		
+.mainFooter
+	background-color black
+
+
+
+@media(min-width 1200px)
+	.col-xs-12
+		&.noMoreGrow
+			width 792px !important
+			margin 0 auto !important
+			float none !important
+			
+	.row-fluid
+		&.noMoreGrow
+			width 792px !important
+			margin 0 auto !important
+			float none !important
+			
+			&.initialForms
+				width 1164px !important
+				
+.breadCrum
+	width 100%
+	position absolute
+	z-index 1
+	top 7px
+	display flex
+	
+	.breadTab
+		padding 1px 9px 1px 12px
+		background-color $regBrd
+		display block
+		text-align center
+		border 1.5px solid red
+		border-left hidden
+		border-right hidden
+		box-sizing border-box
+		position relative
+		cursor pointer
+		text-decoration none
+		
+		&:last-of-type
+			cursor default
+		
+		.textSpan
+			color whitesmoke
+		
+		.triangleSpan
+			width 16.8px
+			height 16.8px
+			background-color $regBrd
+			border-right 1px solid red
+			border-radius 0 0 0 27px
+			border-top 1px solid red
+			display block
+			position absolute
+			top 2.5px
+			transform rotate(46deg)
+			right -8px
+			z-index 2
+			
+		&:hover
+			background-color $grayVersionsInfo
+			
+			.triangleSpan
+				background-color $grayVersionsInfo
+				
+			&:last-of-type
+				background-color $regBrd
+				
+				.triangleSpan
+					background-color $regBrd
+				
+				
+
+			
+		

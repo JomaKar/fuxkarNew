@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../img/favicon.png">
+    <title>Perfil</title>
+
+    <!-- Facebook sharing metas -->
+    <meta class="metaLoc" property="og:locale" content="es_MX" />
+    <meta class="metaType" property="og:type" content="profile" />
+
+
+    <meta class="metaDescrip toEdit" property="og:description" content="" />
+    <meta class="metaUrl toEdit" property="og:url" content="" />
+    <meta class="metaTitle toEdit" property="og:title" content="" />
+    <meta class="metaImg toEdit" property="og:image" content="" />
+
+    <!-- Bootstrap -->
+    <link href="../css/lib/bootstrap.min.css" rel="stylesheet">
+    <!-- Font-awesome -->
+    <link href="../css/lib/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/lib/bootstrap-tokenfield.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="./iframe.css" rel="stylesheet">
+    <script src="../js/lib/jquery-3.1.1.min.js"></script>
+    <script src="../js/sbl.js"></script>
+  </head>
+
+
+  <body class="noPadding">
+
+<!--    <nav class="navbar navbar-inverse myNavBar withSuperTop">
+
+</nav>-->
+
+    <header class="p-header" style="margin-top: 42px">
+
+      <div id="PortadaM" data-width="991" data-height="400" class="p-headerBackImg backImg">
+      </div>
+
+      <div class="p-profileInfoCont row-fluid childHeight noPadding noMargin">
+          <div class="col-xs-12 col-sm-11 col-md-offset-2 col-md-8 noPadding noMoreGrow">
+              <div class="row-fluid childHeight noPadding">
+                  <div id="profilePict" data-width="100" data-height="134" class="p-profilePhoto noPadding NorightM halfML col-xs-4 col-sm-2 col-sm-offset-1 col-md-offset-0 backImg">
+                      <span class="glyphicon glyphicon-camera profImgCameraIcon"></span>
+                  </div>
+                  <div class="p-profileInfo col-xs-7 col-sm-9 col-md-10">
+                      <h4 class="profileName fullName">MiNombre Completo Men</h4>
+                      <p class="profileAlias">
+                          <span>@</span>
+                          <span class="aliasSpan">miAlias</span>
+                          <a href="" class="editProfileAnchor"><span class="fa fa-pencil editProfileSpan"></span></a>
+                      </p>
+                    <!--  <span class="glyphicon glyphicon-camera cameraIconHead"></span> -->
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="p-profActDetCont row-fluid childHeight noMargin noPadding">
+          <div class="garagaInfoDetails col-xs-12">
+              <div class="row-fluid noMoreGrow childHeight noMargin noPadding">
+                  <div class="col-xs-offset-4 col-xs-2 col-sm-offset-3 col-lg-offset-2 NorightP garageCarsCounter">
+                      <span class="carsNumb">5</span>
+                      <span class="carsCountTxt">VEHICULOS <br> EN EL GARAGE</span>
+                  </div>
+                  <div class="col-xs-2 NorightP garageShareCounter">
+                      <span class="shareNumb">13</span>
+                      <span class="sharedCountTxt">VECES <br> COMPARTIDO</span>
+                  </div>
+                  <div class="col-xs-2 noPadding col-xs-offset-2 col-sm-offset-2 col-md-offset-1 col-lg-offset-4 membershipDateCounter hiddenItm">
+                      <span class="membershipCountTxt">EN VRUMM DESDE</span>
+                      <br >
+                      <span class="memDateNumb">12/07/2016</span>
+                  </div>
+                  <div class="dateProfileRgtBtnCont col-xs-3 noPadding col-sm-offset-1 col-lg-offset-3 col-lg-3 col-md-2 col-xs-offset-2">
+                      <p class="rgtInvTxt">¿<span class="hidD666">Aún no </span> <span class="hidU666">No </span> tienes <span class="hidD666"> una </span> <span class="whiteSpace"></span> cuenta?</p>
+                      <!-- just development -->
+                      <a href="/vrumm/build/web/registro/" data-dev="/vrumm/build/web/registro/" data-prod="/web/registro/" class="btn btn-primary rgtInvBtn linkChangeOnEnv">Regístrate</a>
+                      <!-- just production -->
+                      <!-- <a href="/web/registro/" class="btn btn-primary rgtInvBtn">Regístrate</a> -->
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-12 garageFilterBar noPadding">
+              <div class="row-fluid noPadding noMargin childHeight garageFilterRow">
+                  <div class="col-xs-12 col-sm-11 noMoreGrow noPadding col-md-10 filterBar">
+                      <button class="modalBtn btn">Chat</button>
+                      <!-- <span class="shareGarageIcon sharePage">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                            <g>
+                                  <path d="M17.8 6.2h-2.2c-0.4 0-0.8 0.4-0.8 0.8s0.4 0.8 0.8 0.8h1.4v10.7H4.2v-10.7h1.7c0.4 0 0.8-0.4 0.8-0.8s-0.4-0.8-0.9-0.8h-2.4c-0.5 0-0.8 0.4-0.8 0.8v12.3c0 0.4 0.3 0.7 0.8 0.7h14.5c0.4 0 0.8-0.3 0.8-0.7v-12.3C18.6 6.6 18.3 6.2 17.8 6.2zM9.4 3.9l0.3-0.1v10.2c0 0.4 0.4 0.8 0.8 0.8s0.8-0.4 0.8-0.8v-10.6l0.8 0.5c0.1 0.1 0.3 0.2 0.5 0.2 0.2 0 0.4-0.1 0.6-0.3 0.3-0.3 0.3-0.8-0.1-1.1l-2-1.5c-0.3-0.2-0.7-0.3-1 0 -0.1 0.1-1.8 1.5-1.8 1.5 -0.3 0.3-0.3 0.8 0 1.1C8.6 4.2 9.1 4.2 9.4 3.9z" />
+                            </g>
+                          </svg>
+                      </span>
+                      <div class="filterDivCont NorightP NoleftP">
+                          <select name="filter" id="filterSelect">
+                              <option value="garageImgCont">Todos</option>
+                              <option value="soonday">Soon</option>
+                              <option value="someday">Some day</option>
+                              <option value="dream">Dream</option>
+                          </select>
+                          <span class="glyphicon glyphicon-triangle-bottom selectCaret"></span>
+                      </div> -->
+                      <a href="../catalogo" class="btn btn-info" style="margin-top:3px;" id="btncatalogo">Ir a catalogo</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </header>
+
+    <div class="container-fluid noPadding">
+
+      <div class="row-fluid noPadding noMargin childHeight imgCatContBackg garage">
+          <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 noMoreGrow noPadding">
+            <div class="row-fluid childHeight noPadding noMargin modelsSpace">
+                <div class="col-xs-12 noPadding noMargin garageGridCont">
+                    <div class="row-fluid noPadding noMargin childHeight garageGrid">
+                        <!-- <p class="startingText gallery usrGarageLoadingTxt">Cargando modelos de la marca solicitada...</p> -->
+                        <div class="sk-circle">
+                          <div class="sk-circle1 sk-child"></div>
+                          <div class="sk-circle2 sk-child"></div>
+                          <div class="sk-circle3 sk-child"></div>
+                          <div class="sk-circle4 sk-child"></div>
+                          <div class="sk-circle5 sk-child"></div>
+                          <div class="sk-circle6 sk-child"></div>
+                          <div class="sk-circle7 sk-child"></div>
+                          <div class="sk-circle8 sk-child"></div>
+                          <div class="sk-circle9 sk-child"></div>
+                          <div class="sk-circle10 sk-child"></div>
+                          <div class="sk-circle11 sk-child"></div>
+                          <div class="sk-circle12 sk-child"></div>
+                        </div>
+                        <p class="startingText gallery usrGarageInitialTxt hiddenItm">Aún no tienes autos en tu garage, añade uno nuevo...</p>
+                        <!-- <div class="col-xs-12 modelItem col-sm-6 col-md-4 addGarageBtnCon">
+                            <a href="/fuxkar/catalogo/brand-modelo" data-dev="/fuxkar/catalogo/brand-modelo" data-prod="/web/catalogo/brand-modelo" class="addGarageBtn linkChangeOnEnv">
+                                <span class="fa fa-plus-square addGarageIcon"></span>
+                                <p class="addGarageTxt">Añade autos</p>
+                            </a>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row-fluid noPadding childHeight mainFooter">
+
+      </div>
+
+      <div class="modal fade" id="successComparador" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content custom">
+                <div class="modal-header modal-header-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    <h3>
+                      <img src="../img/tab_ic_catalogo@1x.png" alt="">&nbsp;&nbsp;Agregado al Comparador
+                    </h3>
+                </div>
+                <div class="modal-body">
+                  <p class="text-center">Su selección ha sido agregada al Comparador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success btn-block modalBtn" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div>
+
+      <div class="modal fade" id="modal-share" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-share" role="document">
+              <div class="modal-content">
+                  <div class="modalClipboard">
+                      <p class="txt">
+                        Enlace correctamente copiado
+                      </p>
+                  </div>
+                  <div class="modal-body">
+
+                      <div class="container-fluid">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <h1 class="text-right"><a href="#" data-dismiss="modal">&times;</a></h1>
+                                  <h4><strong>Invita a tus amigos a Vrumm y, por cada amigo que se registre, puedes ganar hasta 500 puntos Vrumm.</strong></h4>
+                                  <p class="onlyOnLogged hiddenItm">Ingresa las direcciones de correo electrónico de los amigos que deseas invitar</p>
+                                  <form class="onlyOnLogged hiddenItm" id="invitation-form" method="post" action="">
+                                      <div class="form-group">
+                                          <input type="text" name="addresses" id="tokenfield" class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                          <button type="submit" class="btn btn-primary btn-block" id="btn-send-invitation">Enviar</button>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12 onlyOnLogged hiddenItm">
+                                  <h4><strong>Otras formas de invitar a tus amigos.</strong></h4>
+                              </div>
+                              <div class="col-md-6">
+                                  <a class="btn btn-share shareButtonFB" id="facebook-share">
+                                      Facebook
+                                  </a>
+                              </div>
+                              <div class="col-md-6 onlyOnLogged hiddenItm" id="col-share">
+                                  <a class="btn btn-share" id="copy-to-clipboard">
+                                      Copia el enlace y envíalo a tus amigos<br>por el medio que quieras
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    </div>
+
+
+    <div class="modal fade" id="iframeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modalInnerContainer" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Conversations</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body iframeModalBody">
+              <iframe src="" id="chatIframe" class="theIframe" ></iframe>
+              <!-- inner document must reduce its classes from col-sm-12 to col-sm-6 in div#chat-history and his predecesor sibling -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/lib/bootstrap.js"></script>
+    <script src="../js/lib/bootstrap-tokenfield.min.js"></script>
+    <script src="../js/lib/fingerprint2.min.js"></script>
+    <script type="text/javascript" src="../js/bundle.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery.Jcrop.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery.SimpleCropper.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var chatFrame = $('iframe#chatIframe');
+                var iframeUrl = 'https://chat-af215.firebaseapp.com/autologin.html?mail=admin@vrumm.mobi&pass=123456';
+                var iframeModal = $('div#iframeModal');
+                var iframeBtn = $('button.modalBtn');
+
+                $(document).ready(function(){
+
+                    chatFrame.attr('src', iframeUrl);
+
+                });
+
+                iframeBtn.click(function(){
+                    iframeModal.modal();
+                });
+
+                if(localStorage.getItem('activeSession') === 'yes'){
+                  var logUsr = localStorage.getItem('aUsr');
+
+                  if(logUsr !== null && logUsr !== undefined){
+                    logUsr = parseInt(logUsr);
+                    var visibleUser = (sessionStorage.getItem('currentUserId') !== undefined && sessionStorage.getItem('currentUserId') !== null) ? parseInt(sessionStorage.getItem('currentUserId')) : null;
+
+                    (logUsr === visibleUser) ? $('div.p-profilePhoto').simpleCropper() : null;
+                  }
+                }
+
+                //$('div.p-profilePhoto').simpleCropper();
+
+                //$('div.p-headerBackImg').simpleCropper();
+            });
+
+            function getParameterByName(name, url) {
+                if (!url) {
+                  url = window.location.href;
+                }
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+
+
+            
+            //Cambiar el fondo del header
+            var pathname = window.location + "";
+            var xurl = pathname.split("//");
+            var url = xurl[1].split(".");
+            var brand = url[0];
+            var usrAl = getParameterByName('al');
+            //Ya tenemos la marca
+            if (brand!="fuxkar")
+            {
+              var rs = '';
+              var imgBrand = '';
+              //Aca llamamos al endpoint para obtener la imagen de PortadaImg
+              $.ajax({
+                type: "POST",
+                 url: "http://fuxkar.com/ws/v2/catalogo/getmarcas",
+                data: JSON.stringify({"marca": brand}),
+                datatype: "json",
+                success: function (data,status,jqXHR){
+                  rs = data.mensaje.rs;
+                  imgBrand = rs[0].portada;
+                  $("#PortadaM").css("background-image","url("+imgBrand+")");
+                  $("#PortadaM").css("background-position","center top");
+                  $("#PortadaM").css("background-size","936px 362px");                  
+                },
+                error: function (jqXHR,status){
+                  alert(status+" : "+jqXHR);
+                }
+              });
+              //imgBrand = marcas[brand];
+              //var PortadaImg = imgBrand;
+              $("#PortadaM").css("background-image","url("+imgBrand+")");
+              $("#PortadaM").css("background-position","center top");
+              $("#PortadaM").css("background-size","936px 362px");
+            }
+        </script>
+  </body>
+</html>

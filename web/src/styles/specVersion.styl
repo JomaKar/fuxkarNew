@@ -1,0 +1,268 @@
+@import 'colors.styl'
+
+
+//madeAlberto
+
+.modelHeaderRow
+	&.specVers
+		overflow visible
+
+.addToGarageGroup
+	position relative
+
+	.message
+		display none
+		position absolute
+		font-size 12px
+		background-color $carHoverMsg
+		padding 2px 5px
+		border 0.5px solid $carHoverMsgBrd
+		border-radius 8px
+		left 115%
+		top -4px
+		color #fff
+		width 70px
+		z-index 999
+		
+	&:hover
+		.message
+			display block
+			
+	&.open
+		.message
+			display none
+			
+
+.versionDetailCont
+	&.specVers
+		margin-top 20px
+		
+.modal-header-success
+	color #FFF
+	padding 9px 15px
+	border-bottom 1px solid #eee
+	background-color #000
+	border-top-left-radius 5px
+	border-top-right-radius 5px
+
+.addToGarage
+	top 20px
+	padding 2px 2px 0 2px
+	padding 0
+
+.addToGarage
+	a
+		color #fff !important
+		margin-bottom 2px
+		text-indent 20px
+		margin-bottom 0
+
+		&:hover
+			opacity .8
+
+
+#addSoon
+	background #34d075 url(../img/ic_MiGarage_soon-boton@1x.png) 10px center no-repeat
+
+#addSomeday
+	background #00c5c6 url(../img/ic_MiGarage_someday-boton@1x.png) 10px center no-repeat
+
+#addDream
+	background #d44643 url(../img/ic_MiGarage_dream-boton@1x.png) 10px center no-repeat
+
+
+.colorsTab
+	width 100%
+	height 100px
+	display none
+	justify-content center
+	
+	.colorsContainer
+		width 80%
+		overflow-x scroll
+		display flex
+
+.colorCont
+	padding 5px
+	width 18%
+	margin 5px
+	float left
+	display flex
+	flex-direction column
+	
+	.colorName
+		margin auto
+		color whitesmoke
+		overflow hidden
+		text-overflow ellipsis
+		width 100%
+		white-space nowrap
+		display block
+
+//madeChema
+
+.compareVersionCont
+	margin-top 3px
+	padding-top 4px
+	height 29px
+	width 100%
+	display flex
+	justify-content space-between
+	background-color $grayVersionsInfo
+	
+	.versionArrow
+		font-size 20px
+		color black
+		width 20px
+		height 20px
+		cursor pointer
+		
+	.versionRecognizerGroup
+		width 30%
+		color $regActiveBtn
+		font-size 12px
+		text-align center
+
+.tabsList
+	display flex
+	overflow-x auto
+	overflow-y hidden
+	border-bottom hidden !important
+	width 100%
+	
+	li
+		border-bottom 1px solid $grayVersionsInfo
+		// for eight
+		// width 12.5%
+		// for five
+		width 20%
+		// for six
+		// width 16.67%
+		overflow hidden
+		
+		&:hover, &:focus
+			background-color transparent !important
+			
+			a
+				border hidden
+				background-color transparent !important
+				color $regTextColor
+				border-bottom 1px solid $grayVersionsInfo
+				margin 0
+		
+		&.active
+			border-bottom hidden
+			background-color transparent !important
+			border 1px solid $grayVersionsInfo
+			
+			a 
+				border hidden !important
+				background-color transparent !important
+				color white !important
+				margin 0
+				
+				&:hover
+					border hidden
+					color white
+					margin 0
+			
+		a 
+			font-size 10px
+			padding 5px !important
+			color $regTextColor
+			margin 0
+			border-bottom 1px solid $grayVersionsInfo
+			text-align center
+				
+			&:hover
+				background-color transparent !important
+
+@media(min-width 600px)
+	.tabsList
+		li
+			a
+				font-size 13px
+
+.fichaCat
+	width 48%
+	margin-left 1%
+	display none
+	float left
+	padding-left 15px
+
+.shareLogo
+	&.specVers
+		display flex
+		justify-content flex-end
+	
+	.compareGroup 
+		&.specificVersion
+			color white
+			font-size 14px
+			margin 0 10%
+			
+			.circle
+				&.fa-check-circle
+					border-radius 50%
+					box-shadow inset 0px 0px 2px 2px black, inset 0px 0px 0px 7px red
+					
+			
+.fichaTecnicaDetail
+	padding 2%
+	
+	ul.fichaRenglon
+		display flex
+		justify-content space-between
+		padding-left 0 !important
+		
+		li
+			list-style-type none
+			text-align center
+					
+			.datoVal
+				padding 5px
+				color whitesmoke
+				margin-bottom 2px
+				font-size 12px
+				width 100%
+				
+				&.diffData
+					color $regActiveBtn
+					
+			.titleCont
+				height 35px
+				padding 4px
+				background-color $fichaTecnicaRow
+				font-size 10px !important
+				border-right 1px solid black
+				display flex
+				flex-direction column
+				justify-content center
+				
+				.datoTitle
+					color $fichaTecnicaWords
+					margin auto
+					width 100%
+	
+
+@media(min-width 400px)
+	.fichaTecnicaDetail
+		ul.fichaRenglon
+			li
+				.titleCont
+					font-size 11px
+					
+
+@media(min-width 520px)
+	.fichaTecnicaDetail
+		ul.fichaRenglon
+			li
+				.titleCont
+					font-size 12px
+					
+@media(min-width 800px)
+	.fichaTecnicaDetail
+		ul.fichaRenglon
+			li
+				.titleCont
+					font-size 13px

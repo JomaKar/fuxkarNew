@@ -1,0 +1,93 @@
+@import 'colors.styl'
+
+.editFormContainer
+	margin-top 40px
+	margin-bottom 10px
+
+.textSubmitArea
+	.headArea
+		width 100%
+		display flex
+		justify-content space-between
+		padding-bottom 10px
+		border-bottom 1px solid
+		
+		.configTitle
+			font-size 22px
+			color whitesmoke
+			margin auto 0 0
+		
+		.saveEditBtn
+			background-color $regActiveBtn
+			border-color $regActiveBtn
+			height 43px
+			color whitesmoke
+			padding-top 8px
+			
+	.subTitleConfig
+		color $regTextColor
+		margin-top 5px
+
+.passwordChangeArea
+	border 1px solid !important
+	padding 12px !important
+	border-radius 5px
+	min-height 182px !important
+	
+	.passEditBtn
+		margin 45px auto
+		display block
+		color whitesmoke
+		background-color $regActiveBtn
+		border-color $regActiveBtn
+		position absolute
+
+	.passwordChangeInptsCont
+		visibility hidden
+		
+		#e-ChangePassLeyend
+			font-size 17px
+			color $regTextColor
+			margin 10px 0
+
+#inpPassNew, #inpPassNewConf
+	margin-bottom 9px
+
+
+#inpOldPass
+	margin-bottom 13px
+	
+.UsuarioNombreFijo 
+	&.emailEdit
+		position absolute !important
+		top 7px
+
+.foto_perfil
+	width auto !important
+	height 100% !important
+	display block
+	margin 0 auto
+	
+.mailInpEdit
+	padding-right 80px !important
+	
+.validateMailBtn
+	position absolute
+	right 4px
+	top 12.5px
+	background-color $regActiveBtn
+	border-color $regActiveBtn
+	color whitesmoke
+	
+	&:hover
+		color whitesmoke
+		background-color $regActiveBtn
+		border-color $regActiveBtn
+	
+	&:focus
+		color whitesmoke
+		background-color $regActiveBtn
+		border-color $regActiveBtn	
+		
+	
+	

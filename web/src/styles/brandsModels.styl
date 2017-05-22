@@ -1,0 +1,149 @@
+@import 'colors.styl'
+
+.innerHeaderBrand
+	height 150px
+	box-shadow inset 0 17px 23px -22px white
+	background-color black
+	width 100vw
+	position fixed
+	top 40px
+	left 0
+	z-index 3
+	padding-top 18px
+	border-bottom 1px solid white
+	
+	.backBtn
+		position absolute
+		font-size 27px
+		left 2%
+		top 62px
+		color $backBtn
+		cursor pointer
+		
+		&:hover + .backBtnMess
+			display block
+		
+	.backBtnMess
+		display none
+		position absolute
+		font-size 14px
+		background-color $carHoverMsg
+		padding 2px 5px
+		border 0.5px solid $carHoverMsgBrd
+		border-radius 8px
+		left 13%
+		top 54px
+		color white	
+	
+	.headerBrandImg
+		margin 0 auto
+		background-size 74%
+		height 115px
+		width 135px
+		
+.imgCatContBackg
+	&.garage
+		background-color $garageBack
+		
+.galleryHead
+	height 45px
+	background-image url(../img/usoBack.png)
+	background-position center
+	/*background-color white
+	box-shadow inset 29vw 0px 75px -10px black, inset -29vw 10px 75px -10px black
+	border-bottom 3.5px solid $regActiveBtn*/
+	text-align center
+	font-size 12px
+	padding-top 13px !important
+	color $headModelTxt
+	
+.galleryNeck
+	height 30px
+	font-size 12px
+	/*background-color #4b4848
+	border-bottom 2px solid white*/
+	background-image url(../img/tipBack.png)
+	background-position top
+	background-size auto 34px
+	display flex
+	box-sizing content-box
+	
+	.gallNeckCarSp
+		height 27px
+		margin-top 3px
+		width 44px
+		display block
+		background-color black
+		
+	.gallNeckCarTxt
+		margin-left 20px
+		color white
+		font-size 12px
+		padding-top 6px
+		
+.col-xs-12
+	&.modelItem
+		overflow hidden
+		cursor pointer
+		.img-responsive
+			&.carImg
+				width 100%
+		&:hover
+			.modelItmAnchor
+				color inherit
+				
+				.hoverInfo
+					visibility visible
+					background-color rgba(50, 50, 50, .6)
+					color white
+		
+		.modelItmAnchor
+			color inherit
+			.hoverInfo
+				visibility hidden
+				position absolute
+				top 0
+				width 100%
+				height 100%
+				font-size 16px
+				padding 10%
+				cursor pointer
+				
+				.mDetails
+					list-style-type none
+
+@media(min-width 350px)
+	.innerHeaderBrand
+		.backBtnMess
+			left 11%
+
+
+@media(min-width 500px)
+	.innerHeaderBrand
+		.backBtnMess
+			left 9%
+			
+	.col-xs-12	
+		&.modelItem
+			width 50%
+			
+@media(min-width 650px)
+	.innerHeaderBrand
+		.backBtnMess
+			left 7%
+			
+@media(min-width 768px)
+	.col-sm-4	
+		&.modelItem
+			width 33.33333333%
+			
+@media(min-width 1000px)
+	.innerHeaderBrand
+		.backBtnMess
+			left 5%
+			
+			
+@media(min-width 1500px)
+	.innerHeaderBrand
+		.backBtnMess
+			left 4%

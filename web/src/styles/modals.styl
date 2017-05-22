@@ -1,0 +1,383 @@
+@import 'colors.styl'
+
+.modal-dialog
+	.modal-content
+		&.custom
+			border 1px solid $regTextColor
+			color white
+			font-size 22px
+			min-height 321px
+			margin auto
+			width 92%
+			border-radius 5px
+			display flex
+			flex-direction column
+			justify-content space-around
+			background-color black
+			
+			.modal-header
+				background-color transparent
+				border-bottom hidden
+				
+				.close
+					opacity 1
+					
+					i.fa-times
+						color white
+						opacity 1
+						text-shadow none
+						font-weight 100
+						
+						&:hover
+							color white
+							opacity 1
+							text-shadow none
+							font-weight 100
+							
+						&:focus
+							color white
+							opacity 1
+							text-shadow none
+							font-weight 100
+
+
+			.modal-body
+				min-height 100px
+				background-color transparent
+				margin-top 33px
+				
+			.modal-footer
+					border-top hidden
+					min-height 30%
+					
+					button.modalBtn
+						background-color $regActiveBtn
+						border-color $regActiveBtn
+						text-align center
+						
+						&:focus
+							background-color $regActiveBtn
+							border-color $regActiveBtn
+							
+							&:hover
+								background-color $regActiveBtn
+								border-color $regActiveBtn
+
+#successComparador
+	padding-top 40px
+	
+	.modal-dialog
+		display initial
+		
+		.modal-header-success
+			min-height 100px
+			text-align center
+			padding-top 40px
+			
+			.modal-body
+				min-height 100px
+				
+				p
+					margin-top 20%
+				
+#success-modal
+	padding-top 40px
+	
+	.modal-dialog
+		display initial
+		
+		.modal-header-success
+			min-height 100px
+			text-align center
+			padding-top 40px
+			
+			.modal-body
+				min-height 100px
+				
+				p
+					
+	
+#failLog
+	.modal-dialog
+		width 100% !important
+		
+		.modal-content
+			&.custom
+				border 1px solid $regTextColor
+				color white
+				font-size 22px
+				min-height 321px
+				margin auto
+				width 92%
+				border-radius 5px
+				display flex
+				flex-direction column
+				justify-content space-around
+				background-color black
+				
+				.modal-header
+					background-color transparent
+					position absolute
+					top 0
+					right 0
+					border-bottom hidden
+					
+					.close
+						opacity 1
+						
+						i.fa-times
+							color white
+							opacity 1
+							text-shadow none
+							font-weight 100
+							
+							&:hover
+								color white
+								opacity 1
+								text-shadow none
+								font-weight 100
+								
+							&:focus
+								color white
+								opacity 1
+								text-shadow none
+								font-weight 100
+					
+				.modal-body
+					background-color transparent
+					min-height 350px
+					margin-top 33px
+					
+					.row-fluid
+					
+						.logInModalSection
+							border-right 1px solid $regBrd
+							padding-right 5px !important
+							
+							.form-signin
+								.myFormContr
+									padding-right 1% !important
+									
+								.modalRec
+									flex-wrap wrap
+									min-height 55px
+									justify-content center
+									
+									.cancelarBtn
+										margin-bottom 10px
+										margin-top 40px !important
+										font-size 15px
+										color white
+										display none
+										
+										&:hover
+											color white
+										
+									.loginBtn
+										margin-top 10px !important
+										margin-left 0 !important
+										font-size 15px
+										color white
+										
+										&:hover
+											color white
+						
+						.signInModalSection
+							.regBtnContMdl
+								width 100%
+								display block
+
+								.btnDefiner
+									max-width 380px
+									margin 0 auto
+									display flex
+									
+									.loginPoint
+										background-color $grayBtn
+										border-color $grayBtn
+										width 98%
+										display block
+										height 43px
+										margin 10px 0
+										font-size 15px
+										position relative
+										left 0
+										top 0
+																
+										&:hover
+											background-color $grayBtn
+											border-color $grayBtn
+										&:focus
+											background-color $grayBtn
+											border-color $grayBtn			
+							
+						.sectionLogMd
+							.mdTxt
+								font-size 18px
+								
+							.subTitle
+								color $regTextColor
+								font-size 12px
+								
+						.loginPoint
+							background-color $grayBtn
+							border-color $grayBtn
+							width 40%
+							height 43px
+							position absolute
+							bottom 46px
+							right 15px
+							font-size 15px
+													
+							&:hover
+								background-color $grayBtn
+								border-color $grayBtn
+							&:focus
+								background-color $grayBtn
+								border-color $grayBtn
+
+
+@media(min-width 400px)
+	#failLog
+		.modal-dialog
+			.modal-content
+				&.custom
+					.modal-body
+						
+						.row-fluid
+						
+							.logInModalSection
+								.form-signin
+									.myFormContr
+										padding-right 3% !important
+										
+									.modalRec
+										padding-right 3%
+										
+										.cancelarBtn
+											font-size 18px
+											width 94%
+											
+										.loginBtn
+											font-size 18px
+											width 94%
+											
+										&.centerAlone
+											.loginBtn
+												margin-left 10px !important
+							
+							.signInModalSection
+								
+								.regBtnContMdl
+									width 100%
+									display block
+
+									.btnDefiner
+										justify-content center
+										padding 5px
+										
+										.loginPoint
+											width 93%
+
+							.loginPoint
+								font-size 18px
+								right 17px
+							
+
+@media(min-width 463px)
+	.modal-dialog
+		.modal-content
+			&.custom
+				width 85%
+
+	#failLog
+		.modal-dialog
+			.modal-content
+				&.custom
+					.modal-body
+					
+						.row-fluid
+								.loginPoint
+									right 20px
+
+
+
+
+@media(min-width 520px)
+	#failLog
+		.modal-dialog
+			.modal-content
+				&.custom
+					
+					.modal-body
+						
+						.row-fluid
+							.loginPoint
+								right 22px
+						
+							.logInModalSection
+								.form-signin
+									.myFormContr
+										padding-right 5% !important
+										
+									.modalRec
+										padding-right 5%
+										
+										.cancelarBtn
+											width 90%
+											
+										.loginBtn
+											width 90%
+											
+							.signInModalSection
+								
+								.regBtnContMdl
+									.btnDefiner
+										.loginPoint
+											width 88%
+											left -7px
+
+@media(min-width 600px)
+	.modal-dialog
+		.modal-content
+			&.custom
+				width 82%
+					
+@media(min-width 650px)
+	.modal-dialog
+		.modal-content
+			&.custom
+				width 80%
+				
+	#failLog
+		.modal-dialog
+			.modal-content
+				&.custom
+					width 80%
+					
+					.modal-body
+						.row-fluid
+								.loginPoint
+									right 25px
+					
+@media(min-width 768px)
+	.modal-dialog
+		
+		.modal-content
+			&.custom
+				width 600px
+				
+
+	#failLog
+		.modal-dialog
+			width 100% !important
+			
+			.modal-content
+				&.custom
+					width 600px
+					
+					.modal-body
+						
+						.row-fluid
+							.loginPoint
+								right 30px

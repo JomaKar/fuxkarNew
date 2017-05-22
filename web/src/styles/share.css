@@ -1,0 +1,81 @@
+.modal-share h1 {
+	margin-top: 5px;
+}
+.modal-share h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+.modal-share .modal-content {
+    background-color: #000;
+    border: 1px solid #585858;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+	color: #585858;
+	font-family: 'Roboto', sans-serif;
+}
+.modal-share h4 {
+	color: #fff;
+}
+.tokenfield {
+	min-height: 100px;
+	border-radius: 2px;
+	border: solid #585858 1px;
+	background: #000;
+	color: #585858;
+	padding: 6px;
+}
+.modal-share .btn-primary {
+    background-color: #35cac8;
+    border-color: #35cac8;
+    font-weight: 400;
+}
+
+.modal-share .btn-primary:hover{
+    background-color: #35cac8;
+    border-color: #35cac8;
+    font-weight: 400;
+}
+
+.modal-share .btn-primary:focus{
+    background-color: #35cac8;
+    border-color: #35cac8;
+    font-weight: 400;
+}
+
+.modal-share .btn-share {
+	display: block;
+	color: #585858;
+	text-align: left;
+	border: solid #585858 1px;
+	padding: 20px 0 20px 82px;
+	height: 82px;
+	margin: 25px 0 20px;
+}
+.modal-share .btn-share#facebook-share {
+	line-height: 42px;
+	background: url(../img/square-facebook.png) 25px center no-repeat;
+}
+.modal-share .btn-share#copy-to-clipboard {
+	background: url(../img/ic_link-white-noborder.png) 18px center no-repeat;
+}
+@media (min-width: 768px) {
+	#modal-share .modal-dialog {
+		width: 800px;
+	}
+}
+
+div.modalClipboard{
+	opacity: 0;
+    background-color: rgba(55, 216, 55, 0.78);
+    position: fixed;
+    border-radius: 7px;
+    padding: 5px;
+    top: 0px;
+    right: -200px;
+    text-align: center;
+    width: 166px;
+    height: 50px;
+    color: #fff;
+    font-size: 14px;
+}

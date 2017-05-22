@@ -1,0 +1,1135 @@
+
+<!DOCTYPE html>
+<html >
+  
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Autos Vrumm</title>
+
+    <!-- Facebook sharing metas -->
+    <meta class="metaLoc" property="og:locale" content="es_MX" />
+    <meta class="metaType" property="og:type" content="product.item" />
+    <meta class="metaDescrip" property="og:description" content="Vrumm te permite ver todos los autos del mercado mexicano" />
+    
+    <meta class="metaUrl toEdit" property="og:url" content="http://www.vrumm.com/web/catalogo/" />
+    <meta class="metaTitle toEdit" property="og:title" content="Checa este auto en Vrumm" />
+    <meta class="metaImg toEdit" property="og:image" content="" />
+
+    <!-- Bootstrap -->
+    <link href="../css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/lib/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/lib/bootstrap-tokenfield.min.css" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="../js/lib/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/sbl.js"></script>  
+
+  </head>
+  
+
+  <body class="noPadding">
+    <nav class="navbar navbar-inverse myNavBar">
+      
+    </nav>
+    
+    <div class="container-fluid conNav noPadding">
+
+      <div class="row-fluid noPadding noMargin childHeight imgCatContBackg garage">
+          <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 noPadding noMoreGrow">
+            
+            <div class="breadCrum">
+                <!-- just development -->
+                <a href="" class="breadTab linkChangeOnEnv" data-dev="/fuxkar/web/catalogo/" data-prod="/web/catalogo/">
+                    <span class="textSpan">Marcas</span>
+                    <span class="triangleSpan"></span>
+                </a>
+                <!-- just production -->
+                <!-- <a href="/web/catalogo/" class="breadTab">
+                    <span class="textSpan">Marcas</span>
+                    <span class="triangleSpan"></span>
+                </a> -->
+                <!-- just development -->
+                <a href="" class="breadTab brdId linkChangeOnEnv" data-dev="/fuxkar/web/catalogo/brand-modelo" data-prod="/web/catalogo/brand-modelo">
+                    <span class="textSpan">Modelos</span>
+                    <span class="triangleSpan"></span>
+                </a>
+                <!-- just production -->
+                <!-- <a href="/web/catalogo/brand-modelo" class="breadTab brdId">
+                    <span class="textSpan">Modelos</span>
+                    <span class="triangleSpan"></span>
+                </a> -->
+                <!-- just development -->  
+                <a href="" class="breadTab mdlId linkChangeOnEnv" data-dev="/fuxkar/web/catalogo/modelo-versiones" data-prod="/web/catalogo/modelo-versiones">
+                    <span class="textSpan">Versiones</span>
+                    <span class="triangleSpan"></span>
+                </a>
+                <!-- just production -->
+                <!-- <a href="/web/catalogo/modelo-versiones" class="breadTab mdlId">
+                    <span class="textSpan">Versiones</span>
+                    <span class="triangleSpan"></span>
+                </a> -->
+                <a class="breadTab noChangeHref">
+                    <span class="textSpan">Auto</span>
+                    <span class="triangleSpan"></span>
+                </a>
+            </div>
+
+            <div class="row-fluid childHeight noPadding noMargin versionsSpace">              
+                <!-- <p class="startingText gallery versionsStartTxt">Cargando las versiones del modelo solicitado...</p> -->
+                <div class="versionsCarousel autos backImg col-xs-12 noPadding">
+
+                    <div class="sk-circle" style="color: whitesmoke;">
+                      <div class="sk-circle1 sk-child"></div>
+                      <div class="sk-circle2 sk-child"></div>
+                      <div class="sk-circle3 sk-child"></div>
+                      <div class="sk-circle4 sk-child"></div>
+                      <div class="sk-circle5 sk-child"></div>
+                      <div class="sk-circle6 sk-child"></div>
+                      <div class="sk-circle7 sk-child"></div>
+                      <div class="sk-circle8 sk-child"></div>
+                      <div class="sk-circle9 sk-child"></div>
+                      <div class="sk-circle10 sk-child"></div>
+                      <div class="sk-circle11 sk-child"></div>
+                      <div class="sk-circle12 sk-child"></div>
+                    </div>
+                    
+                </div>
+                <div class="versionsInfoCont col-xs-12 noPadding">
+                    <div class="row-fluid childHeight noMargin noPadding">
+
+                        <div class="colorsTab">
+                            <div class="colorsContainer">
+                              
+                            </div>
+                        </div>
+                        
+                        <!-- details of the model, here we see the brand, auto name, price, etc. also have a few buttons to add to garage and comparator -->
+                        <div class="modelHeader col-xs-12 noPadding">
+                            <div class="row-fluid noMargin modelHeaderRow specVers">
+                                <div class="versionsBrandImg backImg col-xs-3 col-sm-2"></div>
+                                <div class="modelDetail col-xs-8 col-sm-10">
+                                    <div class="mInfoDetail">
+                                        <p class="modelName NobottomM"></p>
+                                        <p class="versionName NobottomM"></p>
+                                        <div class="shareLogo specVers">
+                                            <div class="dropdown addToGarageGroup">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="btnAddToGarage">
+                                                  <img class="isGarage" src="../img/ic_AddGarage@2x.png" alt="" width="28">
+                                                </a>
+                                                <ul class="dropdown-menu addToGarage">
+                                                  <li><a href="#" data-type="soonday" id="addSoon">Soon</a></li>
+                                                  <li><a href="#" data-type="someday" id="addSomeday">Some Day</a></li>
+                                                  <li><a href="#" data-type="dream" id="addDream">Dream</a></li>
+                                                </ul>
+                                                <span class="message addToGrgMsg">Agregar a Mi Garage</span>
+                                            </div>                                            
+                                            <div class="compareGroup specificVersion">
+                                                <span class="fa fa-long-arrow-right right"></span>
+                                                <span class="fa fa-long-arrow-left left"></span>
+                                                <span class="fa fa-plus-circle circle"></span>
+                                                <span class="message addToCmpMsg">Agrega al comparador</span>
+                                            </div>
+                                            <svg class="sharePage" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                                                <g opacity="0.3">
+                                                      <path d="M17.8 6.2h-2.2c-0.4 0-0.8 0.4-0.8 0.8s0.4 0.8 0.8 0.8h1.4v10.7H4.2v-10.7h1.7c0.4 0 0.8-0.4 0.8-0.8s-0.4-0.8-0.9-0.8h-2.4c-0.5 0-0.8 0.4-0.8 0.8v12.3c0 0.4 0.3 0.7 0.8 0.7h14.5c0.4 0 0.8-0.3 0.8-0.7v-12.3C18.6 6.6 18.3 6.2 17.8 6.2zM9.4 3.9l0.3-0.1v10.2c0 0.4 0.4 0.8 0.8 0.8s0.8-0.4 0.8-0.8v-10.6l0.8 0.5c0.1 0.1 0.3 0.2 0.5 0.2 0.2 0 0.4-0.1 0.6-0.3 0.3-0.3 0.3-0.8-0.1-1.1l-2-1.5c-0.3-0.2-0.7-0.3-1 0 -0.1 0.1-1.8 1.5-1.8 1.5 -0.3 0.3-0.3 0.8 0 1.1C8.6 4.2 9.1 4.2 9.4 3.9z" fill="#FFF"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <p class="shareLogo">
+                                          
+                                        </p>
+                                        <p class="modelPrice NobottomM"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>  
+                        </div>
+                        
+
+                        <div class="col-xs-12 compareVersionCont">
+                            <span class="versionArrow left glyphicon glyphicon-menu-left"></span>
+                            <div class="versionRecognizerGroup">
+                                Versión <span class="versionNum"></span> de <span class="versionTotal"></span>
+                            </div>
+                            <span class="versionArrow right glyphicon glyphicon-menu-right"></span>
+                        </div>
+                        <div class="versionDetailCont specVers col-xs-12 noPadding">
+                              <ul class="nav nav-tabs tabsList" role="tablist">
+                                    <li role="presentation" class="active">
+                                      <a href="#mechanic" aria-controls="mechanic" role="tab" data-toggle="tab">Mecánica</a>
+                                    </li>
+                                    <li role="presentation">
+                                      <a href="#Exterior" aria-controls="Exterior" role="tab" data-toggle="tab">Exterior</a>
+                                    </li>
+                                    <li role="presentation">
+                                      <a href="#Interior" aria-controls="Interior" role="tab" data-toggle="tab">Interior</a>
+                                    </li>
+                                    <li role="presentation">
+                                      <a href="#technology" aria-controls="technology" role="tab" data-toggle="tab">Tecnología</a>
+                                    </li>
+                                    <!-- <li role="presentation">
+                                      <a href="#relevant" aria-controls="relevant" role="tab" data-toggle="tab">Destacados</a>
+                                    </li> -->
+                                    <li role="presentation">
+                                      <a href="#qualifications" aria-controls="qualifications" role="tab" data-toggle="tab">Calificaciones</a>
+                                    </li>
+                                    <!-- <li role="presentation">
+                                      <a href="#others" aria-controls="others" role="tab" data-toggle="tab">Otros</a>
+                                    </li> -->
+                                    <!-- <li role="presentation">
+                                      <a href="#colors" aria-controls="colors" role="tab" data-toggle="tab">Colores</a>
+                                    </li> -->
+                              </ul>
+
+                              <!-- Tab panes -->
+                              <div class="tab-content">
+
+                                  <div role="tabpanel" class="tab-pane fichaTecnicaDetail Mecánica active" id="mechanic">
+                                      <ul class="lineOneMec fichaRenglon renglonMec">
+                                          <li class="dato57 pct17 colLinOneMec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Cilindros <span class="hiddenItm">57</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato56 pct17 colLinOneMec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Litros <span class="hiddenItm">56</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato58 pct22 colLinOneMec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Potencia <span class="hiddenItm">58</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato59 pct22 colLinOneMec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Torque <span class="hiddenItm">59</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato60 pct22 colLinOneMec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Tipo <span class="hiddenItm">60</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineTwoMec fichaRenglon renglonMec">
+                                          <li class="dato61 pct30 colLinTwoMec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Combustible <span class="hiddenItm">61</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato66 pct20 colLinTwoMec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Emisiones <span class="hiddenItm">66</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato67 pct25 colLinTwoMec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Rendimiento <span class="hiddenItm">67</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato68 pct25 colLinTwoMec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Vel. max. <span class="hiddenItm">68</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineThreeMec fichaRenglon renglonMec">
+                                          <li class="dato62 pct50 colLinThreeMec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Transmisión <span class="hiddenItm">62</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato64 pct50 colLinThreeMec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Tracción <span class="hiddenItm">64</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineFourMec fichaRenglon renglonMec">
+                                          <li class="dato65 pct25 colLinFourMec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Dirección <span class="hiddenItm">65</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato337 pct25 colLinFourMec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Cap. de arrastre <span class="hiddenItm">337</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato102 pct50 colLinFourMec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Frenos 102</p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                  </div>
+
+                                  <div role="tabpanel" class="tab-pane fichaTecnicaDetail Exterior" id="Exterior">
+                                      <ul class="lineOneExt fichaRenglon renglonExt">
+                                          <li class="dato263 pct40 colLinOneExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Carrocería <span class="hiddenItm">263</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato76 pct20 colLinOneExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Spoiler <span class="hiddenItm">76</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato77 pct20 colLinOneExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Estribos <span class="hiddenItm">77</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato78 pct20 colLinOneExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Alerón <span class="hiddenItm">78</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineTwoExt fichaRenglon renglonExt">
+                                          <li class="datoNull pct25 colLineTwoExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Dimensiones <span class="hiddenItm">dato</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato80 pct25 colLineTwoExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Alto <span class="hiddenItm">80</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato81 pct25 colLineTwoExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Ancho <span class="hiddenItm">81</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato82 pct25 colLineTwoExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Largo <span class="hiddenItm">82</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineThreeExt fichaRenglon renglonExt">
+                                          <li class="dato288 pct25 colLineThreeExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Puertas <span class="hiddenItm">288</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato84 pct25 colLineThreeExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Peso <span class="hiddenItm">84</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato83 pct25 colLineThreeExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Cajuela <span class="hiddenItm">83</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato333 pct25 colLineThreeExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Carga <span class="hiddenItm">333</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineFourExt fichaRenglon renglonExt">
+                                          <li class="dato70 pct33.33 colLineFourExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Rines <span class="hiddenItm">70</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato0 pct33.33 colLineFourExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Llantas delanteras <span class="hiddenItm">0</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato0 pct33.33 colLineFourExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Llantas traseras <span class="hiddenItm">0</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineFiveExt fichaRenglon renglonExt">
+                                          <li class="dato73 pct50 colLineFiveExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Faros <span class="hiddenItm">73</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato74 pct25 colLineFiveExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Faros Niebla <span class="hiddenItm">74</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato88 pct25 colLineFiveExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Cuartos de Led <span class="hiddenItm">88</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineSixExt fichaRenglon renglonExt">
+                                          <li class="dato79 pct50 colLineSixExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Quemacocos <span class="hiddenItm">79</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato142 pct50 colLineSixExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">2° Quemacocos <span class="hiddenItm">142</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineSevenExt fichaRenglon renglonExt">
+                                          <li class="dato273 pct33.33 colLineSevenExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Convertible <span class="hiddenItm">273</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato275 pct33.33 colLineSevenExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Edición Limitada <span class="hiddenItm">275</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato276 pct33.33 colLineSevenExt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Edición Especial <span class="hiddenItm">276</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                  </div>
+
+                                  <div role="tabpanel" class="tab-pane fichaTecnicaDetail Interior" id="Interior">
+                                      <ul class="lineOneInt fichaRenglon renglonInt">
+                                          <li class="dato232 pct40 colLineOneInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Asientos <span class="hiddenItm">232</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato93 pct20 colLineOneInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Filas <span class="hiddenItm">93</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato94 pct20 colLineOneInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Pasajeros <span class="hiddenItm">94</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato101 pct20 colLineOneInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Bolsas de aire <span class="hiddenItm">101</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineTwoInt fichaRenglon renglonInt">
+                                          <li class="dato91 pct25 colLineTwoInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Asiento de conductor <span class="hiddenItm">91</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato167 pct25 colLineTwoInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Ajuste de altura <span class="hiddenItm">167</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato215 pct25 colLineTwoInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Calefacción <span class="hiddenItm">215</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato216 pct25 colLineTwoInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Enfriamiento <span class="hiddenItm">216</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineThreeInt fichaRenglon renglonInt">
+                                          <li class="dato217 pct25 colLineThreeInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Masaje <span class="hiddenItm">217</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato218 pct25 colLineThreeInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Memoria <span class="hiddenItm">218</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato219 pct25 colLineThreeInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Soporte Lumbar <span class="hiddenItm">219</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato220 pct25 colLineThreeInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Ajuste Lumbar <span class="hiddenItm">220</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineFourInt fichaRenglon renglonInt">
+                                          <li class="dato92 pct25 colLineFourInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Asiento de copiloto <span class="hiddenItm">92</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato168 pct25 colLineFourInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Ajuste de altura <span class="hiddenItm">168</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato221 pct25 colLineFourInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Calefacción <span class="hiddenItm">221</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato222 pct25 colLineFourInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Enfriamiento <span class="hiddenItm">222</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineFiveInt fichaRenglon renglonInt">
+                                          <li class="dato223 pct25 colLineFiveInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Masaje <span class="hiddenItm">223</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato224 pct25 colLineFiveInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Memoria <span class="hiddenItm">224</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato225 pct25 colLineFiveInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Soporte Lumbar <span class="hiddenItm">225</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato226 pct25 colLineFiveInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Ajuste Lumbar <span class="hiddenItm">226</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineSixInt fichaRenglon renglonInt">
+                                          <li class="dato96 pct25 colLineSixInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">AA <span class="hiddenItm">96</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato169 pct25 colLineSixInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">No Zonas <span class="hiddenItm">169</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato170 pct25 colLineSixInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Filtro <span class="hiddenItm">170</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato171 pct25 colLineSixInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">CFC <span class="hiddenItm">171</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineSevenInt fichaRenglon renglonInt">
+                                          <li class="datoNull pct20 colLineSevenInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Volante <span class="hiddenItm">dato</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato238 pct40 colLineSevenInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Controles en volante <span class="hiddenItm">238</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato172 pct40 colLineSevenInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Ajuste de altura/profundidad <span class="hiddenItm">172</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineEightInt fichaRenglon renglonInt">
+                                          <li class="dato95 pct33.33 colLineEightInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Cristales delanteros <span class="hiddenItm">95</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato124 pct33.33 colLineEightInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Cristales traseros <span class="hiddenItm">124</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato100 pct33.33 colLineEightInt">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Acabados <span class="hiddenItm">100</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                  </div>
+
+                                  <div role="tabpanel" class="tab-pane fichaTecnicaDetail Tecnología" id="technology">
+                                      <ul class="lineOneTec fichaRenglon renglonTec">
+                                          <li class="dato104 pct33.33 colLineOneTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Sensor de reserva <span class="hiddenItm">104</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato105 pct33.33 colLineOneTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Sensor frontal <span class="hiddenItm">105</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato106 pct33.33 colLineOneTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Alarma <span class="hiddenItm">106</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineTwoTec fichaRenglon renglonTec">
+                                          <li class="dato109 pct30 colLineTwoTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Pantalla <span class="hiddenItm">109</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato266 pct20 colLineTwoTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">GPS <span class="hiddenItm">266</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato237 pct25 colLineTwoTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Computadora de viaje <span class="hiddenItm">237</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato108 pct25 colLineTwoTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Cámara de reversa <span class="hiddenItm">108</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineThreeTec fichaRenglon renglonTec">
+                                          <li class="dato239 pct25 colLineThreeTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Acceso Remoto <span class="hiddenItm">239</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato240 pct25 colLineThreeTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Botón de Encendido <span class="hiddenItm">240</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato112 pct25 colLineThreeTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Estacionamiento Asistido <span class="hiddenItm">112</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato113 pct25 colLineThreeTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Tablero <span class="hiddenItm">113</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineFourTec fichaRenglon renglonTec">
+                                          <li class="dato177 pct20 colLineFourTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">CD <span class="hiddenItm">177</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato97 pct20 colLineFourTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Radio AM/FM <span class="hiddenItm">97</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato178 pct20 colLineFourTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">MP3 <span class="hiddenItm">178</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato179 pct20 colLineFourTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">WMA <span class="hiddenItm">179</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato291 pct20 colLineFourTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">AAC <span class="hiddenItm">291</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineFiveTec fichaRenglon renglonTec">
+                                          <li class="dato186 pct20 colLineFiveTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Digital <span class="hiddenItm">186</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato187 pct20 colLineFiveTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Satelital <span class="hiddenItm">187</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato290 pct20 colLineFiveTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">DVD <span class="hiddenItm">290</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato180 pct20 colLineFiveTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Blue Ray <span class="hiddenItm">180</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato181 pct20 colLineFiveTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Cable Auxiliar <span class="hiddenItm">181</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineSixTec fichaRenglon renglonTec">
+                                          <li class="dato182 pct20 colLineSixTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">USB <span class="hiddenItm">182</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato190 pct20 colLineSixTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">MS <span class="hiddenItm">190</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato188 pct20 colLineSixTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">iPhone/iPod <span class="hiddenItm">188</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato189 pct20 colLineSixTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">CarPlay <span class="hiddenItm">189</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato191 pct20 colLineSixTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">NFC <span class="hiddenItm">191</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineSevenTec fichaRenglon renglonTec">
+                                          <li class="dato183 pct33.33 colLineSevenTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Audio Bluetooth <span class="hiddenItm">183</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato111 pct33.33 colLineSevenTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Manos libres bluetooth <span class="hiddenItm">111</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato185 pct33.33 colLineSevenTec">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">HDD <span class="hiddenItm">185</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                  </div>
+
+                                  <div role="tabpanel" class="tab-pane fichaTecnicaDetail Destacados" id="relevant">
+                                      <ul class="lineOneRel fichaRenglon renglonRel">
+                                          <li class="dato0 pct100 colLineOneRel">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Tecnología Extra <span class="hiddenItm">0</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                  </div>
+
+                                  <div role="tabpanel" class="tab-pane fichaTecnicaDetail Calificación" id="qualifications">
+                                      <ul class="lineOneQual fichaRenglon renglonQual">
+                                          <li class="dato282 pct33.33 colLineOneQual">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Costo <span class="hiddenItm">282</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato283 pct33.33 colLineOneQual">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Ecología <span class="hiddenItm">283</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato284 pct33.33 colLineOneQual">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Comfort <span class="hiddenItm">284</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineTwoQual fichaRenglon renglonQual">
+                                          <li class="dato285 pct33.33 colLineTwoQual">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Lujo <span class="hiddenItm">285</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato286 pct33.33 colLineTwoQual">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Gadgets <span class="hiddenItm">286</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato281 pct33.33 colLineTwoQual">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Potencia <span class="hiddenItm">281</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                  </div>
+
+                                  <div role="tabpanel" class="tab-pane fichaTecnicaDetail Otros" id="others">
+                                      <ul class="lineOneOther fichaRenglon renglonOth">
+                                          <li class="dato117 pct50 colLineOneOther">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Años de Cobertura <span class="hiddenItm">117</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato118 pct50 colLineOneOther">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Kilómetros Cubiertos <span class="hiddenItm">118</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineTwoOth fichaRenglon renglonOth">
+                                          <li class="dato119 pct50 colLineTwoOth">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Asistencia en el camino <span class="hiddenItm">119</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato120 pct50 colLineTwoOth">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Garantía extendida <span class="hiddenItm">120</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineThreeOth fichaRenglon renglonOth">
+                                          <li class="dato121 pct50 colLineThreeOth">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Frecuencia de los servicios <span class="hiddenItm">121</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                          <li class="dato122 pct50 colLineThreeOth">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Costo <span class="hiddenItm">122</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                      <ul class="lineFourOth fichaRenglon renglonOth">
+                                          <li class="dato123 pct100 colLineFourOth">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Servicios incluidos <span class="hiddenItm">123</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                  </div>
+
+                                  <div role="tabpanel" class="tab-pane fichaTecnicaDetail Colores" id="colors">
+                                      <ul class="lineOneCols fichaRenglon renglonColors">
+                                          <li class="dato999999 pct100 colLineOneCols">
+                                              <div class="titleCont">    
+                                                  <p class="datoTitle">Total de colores <span class="hiddenItm">999999</span></p>
+                                              </div>    
+                                              <p class="datoVal"></p>
+                                          </li>
+                                      </ul>
+                                  </div>
+
+                              </div>
+
+                          </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row-fluid noPadding childHeight mainFooter">
+        
+      </div>
+
+  
+    <!-- Modal -->
+    <div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content custom">
+                <div class="modal-header modal-header-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    <h3>
+                      <img src="../img/tab_ic_catalogo@1x.png" alt="">&nbsp;&nbsp;Agregado al Garage
+                    </h3>
+                </div>
+                <div class="modal-body">
+                  <p class="text-center">Su selección ha sido agregada al Garage</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success btn-block modalBtn" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade" id="successComparador" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content custom">
+                <div class="modal-header modal-header-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    <h3>
+                      <img src="../img/tab_ic_catalogo@1x.png" alt="">&nbsp;&nbsp;Agregado al Comparador
+                    </h3>
+                </div>
+                <div class="modal-body">
+                  <p class="text-center">Su selección ha sido agregada al Comparador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success btn-block modalBtn" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" id="modal-share" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-share" role="document">
+            <div class="modal-content">
+                <div class="modalClipboard">
+                    <p class="txt">
+                      Enlace correctamente copiado
+                    </p>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="text-right"><a href="#" data-dismiss="modal">&times;</a></h1>
+                                <h4><strong>Invita a tus amigos a Vrumm y, por cada amigo que se registre, puedes ganar hasta 500 puntos Vrumm.</strong></h4>
+                                <p class="onlyOnLogged hiddenItm">Ingresa las direcciones de correo electrónico de los amigos que deseas invitar</p>
+                                <form class="onlyOnLogged hiddenItm" id="invitation-form" method="post" action="">
+                                    <div class="form-group">
+                                        <input type="text" name="addresses" id="tokenfield" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-block" id="btn-send-invitation">Enviar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 onlyOnLogged hiddenItm">
+                                <h4><strong>Otras formas de invitar a tus amigos.</strong></h4>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="btn btn-share shareButtonFB" id="facebook-share">
+                                    Facebook
+                                </a>
+                            </div>
+                            <div class="col-md-6 onlyOnLogged hiddenItm" id="col-share">
+                                <a class="btn btn-share" id="copy-to-clipboard">
+                                    Copia el enlace y envíalo a tus amigos<br>por el medio que quieras
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="failLog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-sm">
+          
+
+          <div class="modal-content custom">
+              <div class="modal-header modal-header-success">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+              </div>
+
+              <div class="modal-body noPadding butVertHalf">
+                  <div class="row-fluid">
+                      <div class="col-sm-6 col-xs-12 sectionLogMd logInModalSection">
+                          <p class="mdTxt">Para realizar esa acción debes ingresar a tu cuenta</p>
+                          <p class="subTitle">Ingresa tu e-mail/alias y contraseña para entrar</p>
+                          <form class="form-signin noPadding" id="login">
+                              <div id="r-emailInputGrp" class="form-control myFormContr butVertHalf13">
+
+                                <span id="l-mailLabel" class="UsuarioNombreFijo">E-mail*</span>
+                                <input type="text" id="l-email" name="email" class="form-control"  required >
+                              </div>
+
+
+                              <div id="l-passCont" class="form-control myFormContr childHeight butVertHalf13">
+                                
+                                  <span class="UsuarioNombreFijo">Contraseña*</span>
+                                  <input type="password" id="l-pass" name="passw" class="form-control" required>
+                                
+                              </div>
+                                     
+                            
+                              <div class="errorLogin">Hay un error en el mail o la contraseña</div>
+                              <div class="passRecover">¿Olvidaste tu contraseña?</div>
+                              <div class="loginBtnCont noMargin modalRec centerAlone">
+                                <button class="btn btn-lg cancelarBtn NoleftM NorightM">Cancelar</button>
+                                <button class="btn btn-lg btn-block registrarbtn loginBtn" type="submit"><span id="subBtnNrTxt">Iniciar Sesión</span><span id="subBtnRecTxt">Recuperar</span></button>
+                              </div>
+                          </form>
+                      </div>
+                      <div class="col-sm-6 col-xs-12 sectionLogMd signInModalSection NorightP">
+                          <p class="mdTxt">¿Aún no tienes una cuenta?</p>
+                          <p class="subTitle">¡Regístrate para navegar, buscar, guardar y comparar vehículos con Vrumm!</p>
+                          <div class="regBtnContMdl">
+                              <div class="btnDefiner">
+                                  <button id="goToReg" class="btn btn-primary redirectLogBtn loginPoint hidden-sm hidden-md hidden-lg hidden-xl">Regístrate</button>
+                              </div>
+                          </div>
+                      </div>
+                      <button id="goToReg" class="btn btn-primary redirectLogBtn loginPoint hidden-xs">Regístrate</button>
+                  </div>
+              </div>
+
+          </div>
+
+
+        </div><!-- /.modal-dialog -->
+      </div>
+
+
+
+    <div class="passModalCont">
+        <div class="recoverPassModal">
+            <span class="closeModal">X</span>
+            <div class="modalTxtContainer noMargin noPadding">
+                <h3 class="passRecTitles">¡Recupera tu contraseña!</h3>
+                <p class="recPassMdTxt">Ya se envió una liga al E-Mail que registraste para que puedas cambiar tu contraseña.</p>
+                <p class="recPassMdTxt">
+                Sigue las indicaciones detalladas en el E-mail para recuperar tu acceso a Vrumm!
+                </p>
+                <h3 class="passRecTitles">¿No has recibido una liga aún?</h3>
+                <div class="resendPart">
+                    <img src="../img/ic_resend.png" class="resendImg">
+                    <p class="recPassTxt">Reenvía la liga a tu E-Mail</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    </div> 
+        <script src="../js/lib/bootstrap.min.js"></script>
+        <script src="../js/lib/bootstrap-tokenfield.min.js"></script>
+        <script src="../js/lib/fingerprint2.min.js"></script>
+        <script type="text/javascript" src="../js/bundle.js"></script>
+  </body>
+</html>

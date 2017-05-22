@@ -1,0 +1,52 @@
+body{
+	background-color: black !important;
+}
+
+.filterBar{
+	padding-top: 2px !important;
+}
+
+
+.modalBtn{
+	background-color: #35c9c7;
+    color: white;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.modalInnerContainer{
+	width: 80vw;
+}
+
+
+.iframeModalBody{
+	height: 70vh;
+}
+
+
+.theIframe{
+	width: 100%;
+	height: 100%;
+}
+
+#PortadaM {
+	background-repeat: no-repeat;
+}
+.p-header .p-headerBackImg {
+	background-color: black;
+	box-shadow: none;
+}
+.garageShareCounter {
+	display: none;
+}
+.profileAlias {
+	display: none;
+}
+/*.filterBar * {
+display: none;
+}*/
+.profileName {
+	padding-top: 35px;
+}
+
+

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html >
+  
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../img/favicon.png">
+    
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="../css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/lib/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/lib/bootstrap-datetimepicker.css">
+    <script src="../js/lib/jquery-3.1.1.min.js"></script>
+    <script src="../js/sbl.js"></script> 
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(this).scrollTop(0);
+      });
+    </script>  
+
+  </head>
+  
+
+  <body class="noPadding">
+  	<nav class="navbar navbar-inverse myNavBar downBrd">
+     
+    </nav>
+    <div class="container-fluid registro noPadding">
+      	<div class="row-fluid noMoreGrow initialForms noPadding">
+        
+	        <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 noMoreGrow noPadding editFormContainer">
+
+	        	<form class="form-signin noMxWidth noMargin" id="configForm">
+
+					<div class="row-fluid noPadding childHeight">
+
+						<div class="textSubmitArea">
+							<div class="headArea">
+								<p class="configTitle">Edita tu perfil</p>
+								<button class="btn btn-lg saveEditBtn" type="submit">Guardar cambios</button>
+							</div>
+							<p class="subTitleConfig">Podrás participar de promociones y sumarás puntos asegurando que tú eres propietario de tu cuenta</p>
+
+						</div>
+					</div>
+
+		            <div class="row-fluid noPadding">
+
+		            	<div class="col-xs-12 formFirstPart NoleftP halfR col-sm-6">
+
+		            		<div class="form-control myFormContr noPadding butVertHalf13">
+								<span class="UsuarioNombreFijo emailEdit">Usuario*</span>
+								<input type="text" id="aliasE" name="alias" class="form-control noTouch" readonly required autofocus>
+							</div>
+
+							<div id="r-emailInputGrp" class="form-control myFormContr noPadding butVertHalf13">
+								<span id="r-mailLabel" class="UsuarioNombreFijo emailEdit">E-mail*</span>
+								<input type="email" id="inputMailE" readonly class="mailInpEdit form-control noTouch" name="email" class="form-control">
+								<button class="btn validateMailBtn" type="button">Validar</button>
+							</div>
+
+							<div class="form-control myFormContr noPadding butVertHalf13">
+								<span class="UsuarioNombreFijo">¿Quien te invito?*</span>
+								<input type="text" id="referido" name="invitado_por" readonly class="form-control NobottomM referidoEdit" required autocomplete="off">
+								<ul class="noPadding posibleFriendsList row-fluid childHeight NobottomM">
+									<li class="posibleFriend regInputs">
+										<span class="psFrName"></span>
+										<span class="psFrAlias">Sin invitación</span>
+									</li>
+								</ul>
+								<div class="errorFriendNick">Ese usuario no existe</div>
+							</div>
+				            
+				            <div class="form-control passwordChangeArea myFormContr butVertHalf13">
+
+				            	<button class="btn btn-lg passEditBtn" type="button">Cambiar contraseña</button>
+
+								<div class="passwordChangeInptsCont">
+					              	<div id="e-ChangePassLeyend" class="col-xs-12 noPadding">
+						                Cambiar contraseña
+						             </div>
+					              	<input type="password" class="form-control" name="actual" id="inpOldPass" placeholder="Contraseña actual">
+
+									<div class="col-md-6 NoleftP halfR">
+										<!-- <span class="UsuarioNombreFijo">Contraseña nueva</span> -->
+										<input type="password" id="inpPassNew" name="nueva" class="form-control" placeholder="Contraseña nueva">
+									</div>
+									<div class="col-md-6 NorightP halfL">
+										<input type="password" id="inpPassNewConf" name="nuevaConf" class="form-control" placeholder="Reingresar">
+									</div>
+								</div>
+
+
+				            </div>
+
+		            	</div>
+		            </div>
+	            
+
+				    <div class="row-fluid noPadding ">
+		            	<div class="formSecondPart col-xs-12 NorightP halfL col-sm-6">
+		            		<div id="r-nameInputGrp" class="form-control myFormContr noPadding butVertHalf13">
+
+								<div id="r-nameLeyend" class="col-xs-12 noPadding">
+								OPCIONAL
+								</div>
+								<span id="r-nameLabel" class="UsuarioNombreFijo">Nombre</span>
+								<input type="text" class="form-control" name="nombre" id="inputNombre">
+
+				            </div>
+
+				            <div class="form-control myFormContr childHeight noPadding butVertHalf13">
+
+				              <div class="col-md-6 NoleftP halfR divPaterno">
+				                <input type="text" class="form-control" name="paterno" id="inputPaterno" placeholder="Apellido Paterno">
+				              </div>
+				              <div class="col-md-6 NorightP halfL divMaterno">
+				                <input type="text" class="form-control" name="materno" id="inputMaterno" placeholder="Apellido Materno">
+				              </div>
+				            </div>
+
+				            <div id="simInputsCont" class="form-control myFormContr noPadding">
+				                  
+				                <div class="row-fluid noPadding">
+
+				                    <div id="r-btnGrpCont" class="col-md-8 col-sm-12 noPadding">
+
+				                      <div id="r-btnGrp" class="row-fluid childHeight noPadding butVertHalf13">
+
+				                        <div class="radioBtnBox col-xs-6 noPadding">
+				                          <input type="radio" class="manRadioBtn NotopM" value="H" name="genero">
+				                          <button class="btn btn-default genderM">Hombre</button>  
+				                        </div>
+
+				                        <div class="radioBtnBox col-xs-6 noPadding">
+				                          <input type="radio" class="womanRadioBtn NotopM" value="M" name="genero">  
+				                          <button class="btn btn-default genderF">Mujer</button>
+				                        </div>
+				                      </div>
+
+				                      <div id="r-dateRow" class="row-fluid noPadding">
+
+				                            <div id="r-dateCont" class="col-xs-12 noPadding">
+				                              
+				                                  <input id="fechaNacimiento"  type='text' class="form-control NobottomM butVertHalf13" name="fecha_nac" placeholder="Fecha de Nacimiento" />
+				                                  <span class="glyphicon glyphicon-chevron-down dateCaretDown"></span>
+
+				                            </div>
+				                      
+				                      </div>
+				                      
+				                    </div>
+
+				                    <div id="r-fileInputGrp" class="r-fileInputGrp form-group col-md-4 col-xs-6 NobottomM butVertHalf13 profileImgCont">
+				                     
+				                      <div id="r-inpFileImgCont" data-width="100" data-height="134">
+											<img src="../img/cameraIcon.jpg" class="foto_perfil">
+				                      </div>
+
+				                    </div>
+
+				                    <div id="r-textACont" class="col-md-12 col-xs-6 noPadding butVertHalf13 editTagsCont">
+				                      <span class="UsuarioNombreFijo">Cómo te pueden encontrar.</span>
+				                      <textarea name="tags" class="NobottomM" id="inputcontacto" required></textarea>
+				                    </div>
+
+				                </div>   
+				              
+				            </div>
+		            	</div>
+		            </div>
+	          	</form>
+
+	        </div>
+      
+      	</div>
+
+      <div class="row-fluid noPadding mainFooter">
+
+      </div>
+
+    </div> 
+
+	<div class="modal fade" id="successEditProfile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header modal-header-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3>
+                      Datos guardados.
+                    </h3>
+                </div>
+                <div class="modal-body">
+                  <p class="text-center">Su&nbsp;<span class="datoDetail"></span>&nbsp;con éxito.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success btn-block" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade" id="successMailVal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header modal-header-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3>
+                      Mail enviado
+                    </h3>
+                </div>
+                <div class="modal-body">
+                  <p class="text-center textRes">Su selección ha sido agregada al Comparador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success btn-block" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <script type="text/javascript" src="../js/lib/moment.min.js"></script>
+        <script type="text/javascript" src="../js/lib/bootstrap-datetimepicker.min.js"></script>
+        <script src="../js/lib/bootstrap.min.js"></script>
+        <script src="../js/lib/jquery.validate.min.js"></script>
+        <script src="../js/lib/md5.js"></script>
+        <script src="../js/lib/validaciones.js"></script>
+        <!-- <script src="../js/lib/subirFoto.js"></script> -->
+        <script src="../js/lib/fingerprint2.min.js"></script>
+        <script type="text/javascript" src="../js/bundle.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery.Jcrop.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery.SimpleCropper.js"></script>
+        <script type="text/javascript">
+          $(function () {
+                $('#fechaNacimiento').datetimepicker({
+                  format: 'D-MM-YYYY'
+                });
+                $('div#r-inpFileImgCont').simpleCropper();
+            });
+        </script>
+  </body>
+</html>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help

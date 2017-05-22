@@ -1,0 +1,171 @@
+.navbar-inverse{
+	border-radius: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.row{
+	margin:0px;
+}
+
+#fechaNacimiento, #inputPassword2, #inputPaterno, #inputMaterno,#inpOldPass ,#inpPassNewConf{
+  text-align: right;
+}
+
+
+.nav-tabs > li > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+	border: hidden;
+}
+
+input#fechaNacimiento::-webkit-input-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+input#fechaNacimiento::-moz-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+input#fechaNacimiento:-moz-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+input#fechaNacimiento:-ms-input-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+input#inputPassword2::-webkit-input-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inputPassword2::-moz-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inputPassword2:-ms-input-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inpOldPass::-webkit-input-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inpOldPass::-moz-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inpOldPass:-ms-input-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inpPassNew::-webkit-input-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inpPassNew::-moz-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inpPassNew:-ms-input-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inpPassNewConf::-webkit-input-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inpPassNewConf::-moz-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inpPassNewConf:-ms-input-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+
+input#inputPaterno::-webkit-input-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inputPaterno::-moz-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inputPaterno:-ms-input-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inputMaterno::-webkit-input-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inputMaterno::-moz-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+input#inputMaterno:-ms-input-placeholder{
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.imagenes{
+	background: silver;
+	height: auto;
+	border: 2px solid #369;
+}
+
+/**footer**/
+footer ul li{
+	display: inline-block;
+	padding: 5px;
+}
+
+footer ul li a{
+	color:#fff;
+
+}
+footer ul li a:hover{
+	color:#fff;
+	text-decoration: none;
+}

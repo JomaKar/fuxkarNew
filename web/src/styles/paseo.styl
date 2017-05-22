@@ -1,0 +1,62 @@
+@import 'colors.styl'
+
+.panel-heading
+	color whitesmoke !important
+	background-color  $carHoverMsg !important
+	border-color $regTextColor !important
+	height 45px
+	padding-top 14px
+	
+	&.activeHead
+		background-color $regTextColor !important
+		
+	.panelNext
+		display flex
+		justify-content space-between
+		
+		.spanNext
+			cursor pointer
+	
+.panel-body
+	background-color $fichaTecnicaRow !important
+	color whitesmoke !important
+	
+span.rightArr, span.leftArr
+	color $fichaTecnicaRow !important
+	
+
+.bigFooter
+	min-height 400px
+	
+	#appStoreFooter
+		min-height 290px
+		
+		.images
+			margin 20px auto
+			height 80%
+			padding 10px
+			display flex
+			flex-direction column
+			width 60%
+			
+			.iconF
+				width 185px
+				margin auto
+
+	#vrummFooter
+		min-height 330px
+		
+		.vrummListFooter
+			min-height 200px
+			margin-top 50px
+			display flex
+			flex-direction column
+			justify-content space-around
+			
+			li
+				padding 10px 0
+				
+		.vrummBrandRegister
+			margin-top 50px
+
+				

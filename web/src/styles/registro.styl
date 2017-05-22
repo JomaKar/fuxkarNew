@@ -1,0 +1,328 @@
+@import 'colors.styl'
+
+
+.sideImageCont
+	
+	.sideImage
+		width 100%
+		position relative
+		left 0
+
+#r-formContainer
+	left -10px
+	margin-bottom 80px
+
+
+.logoHeader
+	background-image url('../img/b_logo-l.png')
+	height 100px
+	margin-top 8px
+	background-repeat no-repeat
+	background-size 178px 58px
+	background-position center
+
+.registrationTitle
+	.r-title
+		text-align center
+		color white
+		font-size 18px
+		margin-top 0
+	.r-subtitle
+		text-align justify
+		color $regTextColor
+		margin-bottom 6.5px
+		font-size 14px
+
+.goodText
+	color $greenOk
+	font-size 14px
+	font-weight 700
+	margin-top 10px
+
+.badText
+	color red
+	font-size 14px
+	font-weight 700
+	margin-top 10px
+
+#r-emailInputGrp	
+	#r-mailLeyend
+		text-align justify
+	
+	#r-mailLabel
+		position relative
+		bottom -33px
+		left 0
+
+		
+#r-nameInputGrp
+		
+	#r-nameLabel
+		position relative
+		bottom -33px
+		left 0			
+
+
+.posibleFriendsList
+	background-color $regPosListsBack
+	border 1px solid $regBrd
+	position absolute
+	z-index 20
+	
+
+	.posibleFriend
+		display flex
+		justify-content space-between
+		height 25px
+		cursor pointer
+		padding-bottom 2.5px
+		padding-top 2.5px
+		width 100%
+		
+		&:first-of-type
+			padding-top 5px
+			border-bottom 1px solid $regBrd
+		
+		.psFrAlias
+			color $psFrAlias
+		
+		.friendId
+			display none
+		
+		&:hover
+			background-color $regPosItmHv
+				
+.errorFriendNick
+	color red
+	display none		
+
+label#referido-error
+	display none
+
+#r-btnGrpCont
+
+	#r-btnGrp
+		
+		.radioBtnBox
+			overflow hidden
+			
+			.manRadioBtn, .womanRadioBtn
+				position absolute
+				transform scale(9.5, 3.5)
+				left 45%
+				bottom 16px
+				opacity 0
+			
+			.genderM, .genderF
+				background-color transparent
+				border-color $regBrd
+				width 100%
+				height 44.9px
+				font-size 16px
+
+	#r-dateRow
+		#r-dateCont
+			#fechaNacimiento
+				border-color $regBrd
+				background-color transparent
+				cursor pointer
+				padding-right 35px !important
+			
+			.dateCaretDown
+				position absolute
+				right 9px
+				top 15px	
+
+.r-fileInputGrp
+	padding-left 15px
+	
+	#r-inpFileImgCont
+		width 100%
+		height 88px
+		border 1px solid $regBrd
+		position relative
+		cursor pointer
+		overflow hidden
+		
+		.cameraIconRegistro
+			position absolute
+			font-size 43px
+			margin-left 30%
+			margin-top 24px 
+
+			
+@css{
+	.manRadioBtn:hover + .genderM,
+	.womanRadioBtn:hover + .genderF,
+	.manRadioBtn:checked + .genderM,
+	.womanRadioBtn:checked + .genderF{
+		background-color: #00bbc2 !important;
+		color: #fff;
+	}
+}
+			
+				
+#inputcontacto
+	height 88px		 	
+	
+.termsConditions
+	color $regTextColor
+	font-size 12px
+	
+.cancelarBtn
+	display none
+	width 100%
+	
+.registrarbtn, .cancelarBtn
+	background $grayBtn
+	border-color $grayBtn
+	margin 30px 0
+	margin-top 30px !important
+	height 46px
+	color white
+	&:hover, &:active, &:focus
+		background $grayBtn
+		border-color $grayBtn
+		color white
+	
+	&.loginBtn
+		background-color $regActiveBtn
+		border-color $regActiveBtn
+		color white
+
+.logRedBtnCont
+	padding 15px
+	width 81vw
+	padding-bottom 25px
+	text-align center
+	background-color black
+	color white
+	border 1px solid $redirectBox
+	margin 0 auto
+	&.catalogo
+		width 100%
+	
+	.askLog
+		font-size 18px
+		color white
+		
+	.redirectLogBtn
+		background-color $regActiveBtn
+		border-color $regActiveBtn
+		width 94%
+		box-sizing padding-box
+		margin-top 13px
+		height 40px
+		
+		&.loginPoint
+			background-color $grayBtn
+			border-color $grayBtn
+
+@media(min-width 420px)
+	.r-fileInputGrp
+		
+		#r-inpFileImgCont
+			
+			.cameraIconRegistro
+				margin-left 35%
+
+	
+
+@media(min-width 500px)
+	.r-fileInputGrp
+		
+		#r-inpFileImgCont
+			
+			.cameraIconRegistro
+				margin-left 37%
+
+	.logRedBtnCont
+		width 380px
+		&.catalogo
+			width 100%
+
+
+#appStoreFooter
+	height 185px
+	background-color $footStorBack
+	border-bottom 5px solid $regActiveBtn
+	margin-top 50px
+	
+	&.profile
+		margin-top 0
+	
+
+	.storeFooterCont
+		width 80%
+		height 100%
+		text-align center
+		padding-top 20px
+		margin 0 auto
+		
+		.footStoreTxt
+			color #737373
+			font-size 20px
+				
+		.storeLogos
+			width 275px
+			
+		.footerBtnsCont
+			display flex
+			height 74px
+			width 100%
+			justify-content center
+			
+			.appBtn
+				width 160px
+				height 47px
+				background-repeat no-repeat
+				background-size 100%
+				
+				&.googleStore
+					background-image url(../img/androidBtn.png)
+					margin-left 1px
+					
+				&.macStoreBtn
+					background-image url(../img/appBtn.png)
+					margin-right 1px
+
+
+@media(min-width 600px)
+	#appStoreFooter
+	
+		.storeFooterCont
+			width 32%
+	
+#vrummFooter
+	height 195px
+	justify-content space-between
+	padding 0 10%
+	display flex
+	background-color black
+	
+	.vrummListFooter
+		list-style-type none
+		font-size 17px
+		margin-top 26px
+		
+		.footerMenuItm
+			color white
+			a
+				text-decoration none
+				color white
+				font-size 16px
+	
+	.vrummBrandRegister
+		color $regTextColor
+		margin-top 26px
+		font-size 14px			
+
+
+
+@media(min-width 992px)
+	.r-fileInputGrp
+		
+		#r-inpFileImgCont
+			
+			.cameraIconRegistro
+				margin-left 29%
