@@ -168,7 +168,6 @@ $(function(){
 
 
 				var typeFilter = `<div class="galleryHead col-xs-12 noPadding noMargin typeFilter${typeName}">
-									<span class="modelUse">${typeName}</span>
 								 </div>
 								 <div class="col-xs-12 noPadding noMargin">
 				                    <div class="row-fluid noPadding noMargin childHeight modelColl${type}">
@@ -189,7 +188,7 @@ $(function(){
 
 					var myModelYear = `<div class="galleryNeck col-xs-12 noPadding noMargin typeFilter${yearName}">
 					                    <span class="gallNeckCarSp"></span>
-					                    <span class="gallNeckCarTxt">${yearName} ${typeName}</span>
+					                    <span class="gallNeckCarTxt">${typeName} ${yearName}</span>
 					                </div>
 					                <div class="col-xs-12 noPadding noMargin">
 					                    <div class="row-fluid noPadding noMargin childHeight modelBoxYear${type + yearActual}">
